@@ -14,7 +14,7 @@ az group list query '[*].name()'
 **get details of some specified resource-group** \
 az group list --query "[?name=='testrgdemo']"
 
-**Create Storage Account within Resource Group** \ (See this command in raw)
+**Create Storage Account within Resource Group** (See this command in raw) \
 az storage account \
 -n testsademo (name-of-storage-account)\
 -g testrgdemo (resource-group-for-which-this-storage-account-we-are-cerating) \
