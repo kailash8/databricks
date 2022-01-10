@@ -1,4 +1,4 @@
-**For azure CLI help**
+**For azure CLI help** \
 az -h
 OR
 az group -h so on...
