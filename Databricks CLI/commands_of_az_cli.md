@@ -58,4 +58,3 @@ az storage account delete -n itvadlsdemo -g itvazureclidemo
 ### Delete Resource Group
 az group delete -n itvazureclidemo
 
-![image](https://user-images.githubusercontent.com/48403668/148754117-d53babc4-1389-4da9-a01b-a5ac01e778a2.png)
