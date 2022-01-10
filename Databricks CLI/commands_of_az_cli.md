@@ -38,6 +38,10 @@ az storage fs list --account-name testadlsdemo
 
 
 ## Current status
+| Syntax| Description |
+| ----------- | ----------- |
+| Header | Title |
+| Paragraph | Text |
 container name data within storage account \
 itvazureclidemo -resource-group \
 itvadlsdemo -storage-account \
