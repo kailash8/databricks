@@ -40,12 +40,9 @@ az storage fs list --account-name testadlsdemo
 ## Current status
 | Syntax| Description |
 | ----------- | ----------- |
-| Header | Title |
-| Paragraph | Text |
-container name data within storage account \
-itvazureclidemo -resource-group \
-itvadlsdemo -storage-account \
-data -filesystemORcontainer-name
+| itvazureclidemo | resource-group |
+| itvadlsdemo | storage-account |
+| data | filesystemORcontainer-name |
 
 ### Upload the directory(local) into the Container or filesystem (Storage-account)
 az storage fs directory upload -f data --account-name itvadlsdemo -s "local-path" --recursive
