@@ -1,3 +1,5 @@
+## Azure Essentials for Databricks - Azure CLI
+
 ### **For azure CLI help** 
 az -h \
 OR \
