@@ -29,3 +29,12 @@ az storage account list -g testrgdemo
 
 ### **Delete specified storage account associated with some resource-group** 
 az storage account delete -n testsademo -g testrgdemo
+
+### Add Containers as part of Storage Account
+
+
+### List all the container and storage given inside specified storage account
+az storage fs list --account-name testadlsdemo
+
+### Create FileSystem or Conatiner for Storage Account
+az storage fs create -n data (this is name of fs or container) --account-name testadlsdemo
