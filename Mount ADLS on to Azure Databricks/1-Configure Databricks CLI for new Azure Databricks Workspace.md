@@ -7,7 +7,7 @@
 4. Install databricks-cli (wherever you want, can be python Virtual Environment or any other CLI)
 5. Try given command. --> databricks configure --token --profile demoprofile (any name just avoid changes in default profile)
 6. Prompt will be generated for host and token. Enter write details.
-7. Check it was successful attempt or not. command: databricks fs ls --profile demoprofile
+7. Check it was successful attempt or not. command: databricks fs ls --profile testadlsdb
 8. databricks-results directory should get generated if it is successful.
 
 
