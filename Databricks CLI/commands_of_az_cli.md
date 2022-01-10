@@ -30,11 +30,32 @@ az storage account list -g testrgdemo
 ### **Delete specified storage account associated with some resource-group** 
 az storage account delete -n testsademo -g testrgdemo
 
-### Add Containers as part of Storage Account
-
+### Add Containers as part of Storage Account (Create FileSystem or Conatiner for Storage Account)
+az storage fs create -n data (this is name of fs or container) --account-name testadlsdemo
 
 ### List all the container and storage given inside specified storage account
 az storage fs list --account-name testadlsdemo
 
-### Create FileSystem or Conatiner for Storage Account
-az storage fs create -n data (this is name of fs or container) --account-name testadlsdemo
+
+## Current status
+container name data within storage account \
+itvazureclidemo -resource-group \
+itvadlsdemo -storage-account \
+data -filesystemORcontainer-name
+
+### Upload the directory(local) into the Container or filesystem (Storage-account)
+az storage fs directory upload -f data --account-name itvadlsdemo -s "local-path" --recursive
+
+### validate if data got uploaded successfuly or not
+az stoorage fs directory list -f data --account-name itvadlsdemo
+
+### Get details of files in directory
+az storage fs file list -f data --path(location-of-folder-in-container i.e. retail_db) --account-name itvadlsdemo
+
+### Delete Storage Account
+az storage account delete -n itvadlsdemo -g itvazureclidemo
+
+### Delete Resource Group
+az group delete -n itvazureclidemo
+
+![image](https://user-images.githubusercontent.com/48403668/148754117-d53babc4-1389-4da9-a01b-a5ac01e778a2.png)
