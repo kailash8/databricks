@@ -15,7 +15,7 @@ configs = {"fs.azure.account.auth.type": "OAuth", \
            "fs.azure.account.oauth2.client.secret": f"{client_secret}", \
            "fs.azure.account.oauth2.client.endpoint": f"https://login.microsoftonline.com/{tenant_id}/oauth2/token"} \
            
-**Configs from step 5:** \  
+**Configs from step 5:** \
 def mount_adls(container_name): \
   dbutils.fs.mount( \
     source = f"abfss://{container_name}@{storage_account_name}.dfs.core.windows.net/", \
